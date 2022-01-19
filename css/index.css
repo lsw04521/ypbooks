@@ -27,3 +27,5 @@
 .box-1-ul li:nth-of-type(2) {border-left: 1px solid #e6ded0; border-right: 1px solid #e6ded0;}
 
 .box-2 {width: 960px; padding: 30px; margin: 0 auto; background: #FBF3E6;}
+
+.box-3 {width: 960px; height: 500px; margin: 0 auto; background: #daefe0; margin-top: 50px;}
