@@ -1,89 +1,136 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>영풍문고</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영풍문고</title>
 
-        <link rel="shortcut icon" href="https://pub.ypbooks.co.kr/ypbooks/images/ylogo.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://pub.ypbooks.co.kr/ypbooks/images/ylogo.ico" type="image/x-icon" />
 
-        <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
 
-    </head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="today.js"></script>
 
-    <body>
+</head>
 
-        <header>
+<body>
 
-            <div id="h_i_b">
+    <header>
 
-                <div class="h-i-1">
+        <div id="h_i_b">
 
-                    <img src="img/topb_l_1227_02.jpg" alt="topb">
+            <div class="h-i-1">
 
-                </div>
-
-                <div class="h-i-2">
-
-                    <img src="img/topb_r_0101.jpg" alt="topb"> 
-
-                </div>
+                <img src="img/topb_l_1227_02.jpg" alt="topb">
 
             </div>
 
-        </header>
+            <div class="h-i-2">
 
-        <div id="i_c_b">
+                <img src="img/topb_r_0101.jpg" alt="topb">
 
-            <nav>
-                <ul>
-                    
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원인증/가입</a></li>
-                    <li><a href="#">장바구니</a></li>
-                    <li><a href="#">주문/배송조회</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    
-                </ul>
-
-            </nav>
-
-            <div class="s_box">
-                <img src="img/yp_logo.png" alt="logo">
-                <div class="s_b_b">
-                    <div class="s_t_b">
-                        <p>통합검색</p>
-                    </div>
-                    <input id="myInput" type="text">
-                </div>
-                <div class="s_i_b">
-                    <img src="img/top_search.gif" alt="search">
-                </div>
+            </div>
 
         </div>
+
+    </header>
+
+    <div id="i_c_b">
+
+        <nav>
+            <ul>
+
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원인증/가입</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">주문/배송조회</a></li>
+                <li><a href="#">고객센터</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="s_box">
+            <a href="#"><img src="img/yp_logo.png" alt="logo"></a>
+            <div class="s_b_b">
+                <div class="s_t_b">
+                    <p style="cursor: default;">통합검색</p>
+                </div>
+                <input id="myInput" type="text">
+            </div>
+            <div class="s_i_b">
+                <img src="img/top_search.gif" alt="search">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="menu_c_b">
+
+        <div class="menu_b">
+
+            <ul class="m_c_1">
+
+                <li>베스트도서</a></li>
+                <li>신간도서</li>
+                <li>국내도서</li>
+                <li>외국도서</li>
+                <li>이벤트</li>
+                <li>기획/테마</li>
+
+            </ul>
+
+            <ul class="m_c_2">
+
+                <li>문화행사</li>
+                <li>기프티콘</li>
+                <li>회원혜택</li>
+                <li>출석체크</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div id="main_bg">
 
         <div class="box-1">
-        </div>
-        <div class="box-2">
-        </div>
-        <div class="box-3">
-        </div>
-        <div class="box-4">
-        </div>
-        <div class="box-5">
-        </div>
-        <div class="box-6">
-        </div>
-        <div class="box-7">
-        </div>
-        <div class="box-8">
+
+            <ul class="box-1-ul">
+                <li>
+                    <img src="img/main1221_travel.jpg" alt="travel">
+                </li>
+                <li>
+                    <img src="img/main1230_retro.jpg" alt="travel">
+                </li>
+                <li>
+                    <img src="img/mainc_0118.jpg" alt="travel">
+                </li>
+            </ul>
+
         </div>
 
-    </body>
+        <div id="box_area">
+
+            <h3 style="margin: 40px 0 16px;">오늘의 책</h3>
+
+            <div class="box-2">
+
+                <div class="today"></div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
 
 </html>
