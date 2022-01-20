@@ -13,11 +13,11 @@
 
 .menu_b {width: 1132px; height: 50px; margin: 0 auto;}
 .m_c_1 {float: left;}
-.m_c_1 li {width: 120px; padding: 1.75%; height: 50px; font-size: 18px; color: #285a35; font-family: "Noto Sans Kr", sans-serif !important; letter-spacing: -0.5px; font-weight: bold; float: left; cursor: pointer; text-align: center; border: 1px solid #e6ded0; transition: all .3s ease-in-out;}
-.m_c_1 li:hover {background-color: #285a35; color: #fff; border: 1px solid #285a35;}
+.m_c_1 li {width: 120px; padding: 1.75%; height: 50px; font-size: 18px; color: #285a35; font-family: "Noto Sans Kr", sans-serif !important; letter-spacing: -0.5px; font-weight: bold; float: left; cursor: pointer; text-align: center; border: 1px solid #d2d2d2; transition: all .3s ease-in-out;}
+.m_c_1 li:hover {height: 60px; background-color: #285a35; color: #fff; border: 1px solid #285a35; margin-top: -10px;}
 .m_c_2 {float: left;}
-.m_c_2 li {width: 100px; padding: 3.25%; height: 50px; font-size: 18px; color: #285a35; font-family: "Noto Sans Kr", sans-serif !important; letter-spacing: -0.5px; font-weight: bold; float: left; cursor: pointer; text-align: center; border: 1px solid #e6ded0; transition: all .3s ease-in-out;}
-.m_c_2 li:hover {background-color: #e6ded0; border: 1px solid #e6ded0;}
+.m_c_2 li {width: 100px; padding: 3.25%; height: 50px; font-size: 18px; color: #285a35; font-family: "Noto Sans Kr", sans-serif !important; letter-spacing: -0.5px; font-weight: bold; float: left; cursor: pointer; text-align: center; border: 1px solid #d2d2d2; transition: all .3s ease-in-out;}
+.m_c_2 li:hover {height: 60px; background-color: #e6ded0; border: 1px solid #e6ded0; margin-top: -10px;}
 
 #box_area {width: 960px; height: 3000px; margin: 0 auto;}
 
@@ -26,6 +26,29 @@
 .box-1-ul li {float: left; cursor: pointer;}
 .box-1-ul li:nth-of-type(2) {border-left: 1px solid #e6ded0; border-right: 1px solid #e6ded0;}
 
-.box-2 {width: 960px; padding: 30px; margin: 0 auto; background: #FBF3E6;}
+.box-2 {width: 960px; padding: 30px; margin: 0 auto; background: #FBF3E6; display: flex; cursor: pointer; border: 1px solid rgba(0, 0, 0, 0); transition: .3s ease-in-out;}
+.box-2 img {transition: .3s ease-in-out; box-shadow: 4px 5px 10px rgb(0 0 0 / 16%), 4px 6px 6px rgb(0 0 0 / 23%);}
+.box-2:hover {border: 1px solid #918979;}
+.box-2:hover img {box-shadow: 0 10px 10px rgba(0, 0, 0, 0.192), 0 1px 2px rgb(0 0 0 / 24%);}
 
-.box-3 {width: 960px; height: 500px; margin: 0 auto; background: #daefe0; margin-top: 50px;}
+.menu-3 li {width: 25%; color: #3a3a3a; font-weight: bold; padding: 15px; cursor: pointer; margin-top: 50px; float: left; text-align: center; background-color: #fff; transition: .2s ease-in-out;}
+.menu-3 li:hover {background-color: #daefe0;}
+.box-3 {width: 960px; margin: 0 auto; background: #daefe0; margin-bottom: 50px; float: left;}
+.box-3 img {width: 162px; height: 230px;}
+
+.t_box {width:25%; height:450px; padding: 20px; float: left; text-align:center; border-radius:4px; box-shadow:4px 4px 4px rgba(0, 0, 0, 0); }
+.t_box h3 {font-size: 15px;
+    color: #333;}
+.t_box img {box-shadow: 4px 5px 10px rgb(0 0 0 / 16%), 4px 6px 6px rgb(0 0 0 / 23%); border: 1px solid #daefe0; transition: .3s ease-in-out;}
+.t_box img:hover {border: 1px solid #285a35; box-shadow: 4px 5px 10px rgb(0 0 0 / 16%), 4px 6px 6px rgb(0 0 0 / 23%);}
+.type-box4 {display: none;}
+.type-box2 {display: none;}
+.type-box3 {display: none;}
+
+.box-4 {width: 960px; padding: 30px; margin: 0 auto; background-color: #e6f4ff; display: flex; justify-content: space-between;}
+.box-4 img {width: 156px; height: 226px; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%); border: 1px solid #dcdcdc; box-sizing: border-box;}
+.box-4 img:hover {box-shadow: 0 10px 10px rgba(0, 0, 0, 0.192), 0 1px 2px rgb(0 0 0 / 24%);}
+
+.box-5 {width: 960px; padding: 30px; margin: 0 auto; background-color: #deeadc;}
+.one {width: 50%; float: left;}
+.tow {width: 50%; float: left;}
