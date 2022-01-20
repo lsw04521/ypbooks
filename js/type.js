@@ -1,7 +1,7 @@
 $.ajax({
   method: "GET",
-  url: "https://dapi.kakao.com/v3/search/book?target=content",
-  data: { query: "추천베스트" },
+  url: "https://dapi.kakao.com/v3/search/book?target=title",
+  data: { query: "명탐정코난" },
   headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
 })
   .done(function (msg) {
@@ -10,19 +10,161 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $(".type-box >.t_box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
-      $(".type-box >.t_box").eq(i).append("<h3>" + '<a href="#">' + msg.documents[i].title + "</a>" + "</h3>");
-      $(".type-box >.t_box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
-
-
-      var str = msg.documents[i].contents;
-      var str2 = str.substring(0, 60);
-
-      $(".type-box >.t_box").eq(i).append("<p>" + '<a href="#">' + str2 + "</a>" + "</p>");
+      $(".type-box >.t_box:nth-of-type(1)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
+      $(".type-box >.t_box:nth-of-type(1)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
+      $(".type-box >.t_box:nth-of-type(1)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+      $(".type-box >.t_box:nth-of-type(1)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
 
     }
 
   });
+
+  $.ajax({
+    method: "GET",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
+    data: { query: "그해우리는1" },
+    headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
+  })
+    .done(function (msg) {
+  
+      var boxs = document.getElementsByClassName('t_box');
+  
+      for (var i = 0; i < boxs.length; i++) {
+  
+        $(".type-box >.t_box:nth-of-type(2)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
+        $(".type-box >.t_box:nth-of-type(2)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
+        $(".type-box >.t_box:nth-of-type(2)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+        $(".type-box >.t_box:nth-of-type(2)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+  
+      }
+  
+    });
+
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: { query: "차트의" },
+      headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
+    })
+      .done(function (msg) {
+    
+        var boxs = document.getElementsByClassName('t_box');
+    
+        for (var i = 0; i < boxs.length; i++) {
+    
+          $(".type-box >.t_box:nth-of-type(3)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
+          $(".type-box >.t_box:nth-of-type(3)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
+          $(".type-box >.t_box:nth-of-type(3)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+          $(".type-box >.t_box:nth-of-type(3)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+    
+        }
+    
+      });
+
+      $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: { query: "세상에서가장행복한" },
+        headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
+      })
+        .done(function (msg) {
+      
+          var boxs = document.getElementsByClassName('t_box');
+      
+          for (var i = 0; i < boxs.length; i++) {
+      
+            $(".type-box >.t_box:nth-of-type(4)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
+            $(".type-box >.t_box:nth-of-type(4)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
+            $(".type-box >.t_box:nth-of-type(4)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+            $(".type-box >.t_box:nth-of-type(4)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+      
+          }
+      
+        });
+
+        $.ajax({
+          method: "GET",
+          url: "https://dapi.kakao.com/v3/search/book?target=title",
+          data: { query: "강성태66일" },
+          headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
+        })
+          .done(function (msg) {
+        
+            var boxs = document.getElementsByClassName('t_box');
+        
+            for (var i = 0; i < boxs.length; i++) {
+        
+              $(".type-box >.t_box:nth-of-type(5)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
+              $(".type-box >.t_box:nth-of-type(5)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
+              $(".type-box >.t_box:nth-of-type(5)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+              $(".type-box >.t_box:nth-of-type(5)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+        
+            }
+        
+          });
+
+          $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?target=title",
+            data: { query: "인문학의숲" },
+            headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
+          })
+            .done(function (msg) {
+          
+              var boxs = document.getElementsByClassName('t_box');
+          
+              for (var i = 0; i < boxs.length; i++) {
+          
+                $(".type-box >.t_box:nth-of-type(6)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
+                $(".type-box >.t_box:nth-of-type(6)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
+                $(".type-box >.t_box:nth-of-type(6)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+                $(".type-box >.t_box:nth-of-type(6)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+          
+              }
+          
+            });
+
+            $.ajax({
+              method: "GET",
+              url: "https://dapi.kakao.com/v3/search/book?target=title",
+              data: { query: "현대문학" },
+              headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
+            })
+              .done(function (msg) {
+            
+                var boxs = document.getElementsByClassName('t_box');
+            
+                for (var i = 0; i < boxs.length; i++) {
+            
+                  $(".type-box >.t_box:nth-of-type(7)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
+                  $(".type-box >.t_box:nth-of-type(7)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
+                  $(".type-box >.t_box:nth-of-type(7)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+                  $(".type-box >.t_box:nth-of-type(7)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+            
+                }
+            
+              });
+
+              $.ajax({
+                method: "GET",
+                url: "https://dapi.kakao.com/v3/search/book?target=title",
+                data: { query: "빛을" },
+                headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
+              })
+                .done(function (msg) {
+              
+                  var boxs = document.getElementsByClassName('t_box');
+              
+                  for (var i = 0; i < boxs.length; i++) {
+              
+                    $(".type-box >.t_box:nth-of-type(8)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
+                    $(".type-box >.t_box:nth-of-type(8)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
+                    $(".type-box >.t_box:nth-of-type(8)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+                    $(".type-box >.t_box:nth-of-type(8)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+              
+                  }
+              
+                });
 
 $.ajax({
   method: "GET",
@@ -38,13 +180,8 @@ $.ajax({
 
       $(".type-box2 >.t_box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
       $(".type-box2 >.t_box").eq(i).append("<h3>" + '<a href="#">' + msg.documents[i].title + "</a>" + "</h3>");
-      $(".type-box2 >.t_box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
-
-
-      var str = msg.documents[i].contents;
-      var str2 = str.substring(0, 60);
-
-      $(".type-box2 >.t_box").eq(i).append("<p>" + '<a href="#">' + str2 + "</a>" + "</p>");
+      $(".type-box2 >.t_box").eq(i).append("<h6>" + msg.documents[i].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+      $(".type-box2 >.t_box").eq(i).append("<h3>" + msg.documents[i].sale_price + "원" + "</h3>");
 
     }
 
@@ -64,13 +201,8 @@ $.ajax({
 
       $(".type-box3 >.t_box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
       $(".type-box3 >.t_box").eq(i).append("<h3>" + '<a href="#">' + msg.documents[i].title + "</a>" + "</h3>");
-      $(".type-box3 >.t_box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
-
-
-      var str = msg.documents[i].contents;
-      var str2 = str.substring(0, 60);
-
-      $(".type-box3 >.t_box").eq(i).append("<p>" + '<a href="#">' + str2 + "</a>" + "</p>");
+      $(".type-box3 >.t_box").eq(i).append("<h6>" + msg.documents[i].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+      $(".type-box3 >.t_box").eq(i).append("<h3>" + msg.documents[i].sale_price + "원" + "</h3>");
 
     }
 
@@ -90,13 +222,8 @@ $.ajax({
 
       $(".type-box4 >.t_box").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
       $(".type-box4 >.t_box").eq(i).append("<h3>" + '<a href="#">' + msg.documents[i].title + "</a>" + "</h3>");
-      $(".type-box4 >.t_box").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
-
-
-      var str = msg.documents[i].contents;
-      var str2 = str.substring(0, 60);
-
-      $(".type-box4 >.t_box").eq(i).append("<p>" + '<a href="#">' + str2 + "</a>" + "</p>");
+      $(".type-box4 >.t_box").eq(i).append("<h6>" + msg.documents[i].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+      $(".type-box4 >.t_box").eq(i).append("<h3>" + msg.documents[i].sale_price + "원" + "</h3>");
 
     }
 
