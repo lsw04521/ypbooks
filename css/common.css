@@ -13,7 +13,7 @@ nav ul li a {border-right: 1px solid #cdcdcd; margin-right: 4px; padding-right: 
 nav ul li:nth-of-type(5) a {border-right: 0;}
 nav ul li a:hover {color: #285a35; text-decoration:underline;}
 
-footer {width:100%; margin: 0 auto; background-color: #f5f5f5; margin-top: 10px; margin-top: 60px;}
+footer {width:100%; margin: 0 auto; background-color: #f5f5f5; margin-top: 10px;}
 #f_top {width: 100%; height: 50px; margin: 0 auto; border-bottom: 1px solid #dcdcdc;}
 #f_top ul {width: 960px; height: 50px; margin: 0 auto;}
 #f_top ul li {float: left; margin: 12px 18px;}
