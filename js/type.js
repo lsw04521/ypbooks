@@ -3,11 +3,6 @@ $(function () {
   $('.cart').append('<a href="#">' + '<div class="c_2">' + "내서점" + "</div>" + '</a>');
 });
 
-$(function () {
-  $('.cart').append('<a href="#">' + '<div class="c_1">' + "장바구니" + "</div>" + '</a>');
-  $('.cart').append('<a href="#">' + '<div class="c_2">' + "내서점" + "</div>" + '</a>');
-});
-
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",

@@ -1,0 +1,29 @@
+#wrap {width: 100%; height: auto; margin: 0 auto; border-top: 2px solid #285a35;}
+
+#sub_area {width: 960px; height: auto; margin: 0 auto;}
+
+.s_t_box {display: flex; margin-top: 25px;}
+.s_t_box select {margin: 0px 10px;}
+.s_t_box a {background-color: #285a35; padding: 0px 10px; color: #fff;}
+.s_t_box a:hover {text-decoration: underline;}
+
+#p_box {width: 960px; height: 432px; margin: 0 auto; display: flex; margin-top: 25px;}
+
+.left {width: 70%; height: 432px; display: flex;}
+
+.right {width: 30%; height: 432px; background-color: #f2f2f2; text-align: center; padding-left: 75px;}
+
+.right ul li a {color: #000;}
+.right ul li {padding: 20px; width: 70%;}
+.right ul li:nth-of-type(1) {background: #da4444;}
+.right ul li:nth-of-type(2) {background: #266444;}
+.right ul li:nth-of-type(3) {background: #39a875;}
+.right ul li:nth-of-type(4) {border: 1px solid #999; background: #fff;}
+
+.p_text {width: 100%; padding-left: 30px;}
+
+.p_s {width: 198px; height: 432px; text-align: center;}
+.p_s a {border: 1px solid #999; color: #000;}
+.p_s img {width: 198px; height: 279px;}
+
+.book {border-top: 1px solid #999; padding-top: 50px;}
