@@ -6,7 +6,7 @@ $(function () {
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "코난" },
+  data: { query: "명탐정코난100" },
   headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
 })
   .done(function (msg) {
@@ -15,10 +15,10 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $(".type-box >.t_box:nth-of-type(1)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
-      $(".type-box >.t_box:nth-of-type(1)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
-      $(".type-box >.t_box:nth-of-type(1)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
-      $(".type-box >.t_box:nth-of-type(1)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+      $(".type-box >.t_box:nth-of-type(1)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[0].thumbnail + "'/>" + "</a>");
+      $(".type-box >.t_box:nth-of-type(1)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[0].title + "</a>" + "</h3>");
+      $(".type-box >.t_box:nth-of-type(1)").eq(i).append("<h6>" + msg.documents[0].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+      $(".type-box >.t_box:nth-of-type(1)").eq(i).append("<h3>" + msg.documents[0].sale_price + "원" + "</h3>");
 
     }
 
@@ -195,7 +195,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "호텔해운대" },
+  data: { query: "호수의 일" },
   headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
 })
   .done(function (msg) {
@@ -204,10 +204,10 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $(".type-box2 >.t_box:nth-of-type(2)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
-      $(".type-box2 >.t_box:nth-of-type(2)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
-      $(".type-box2 >.t_box:nth-of-type(2)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
-      $(".type-box2 >.t_box:nth-of-type(2)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+      $(".type-box2 >.t_box:nth-of-type(2)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[0].thumbnail + "'/>" + "</a>");
+      $(".type-box2 >.t_box:nth-of-type(2)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[0].title + "</a>" + "</h3>");
+      $(".type-box2 >.t_box:nth-of-type(2)").eq(i).append("<h6>" + msg.documents[0].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+      $(".type-box2 >.t_box:nth-of-type(2)").eq(i).append("<h3>" + msg.documents[0].sale_price + "원" + "</h3>");
 
     }
 
@@ -258,7 +258,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "세계" },
+  data: { query: "치약을마중나온" },
   headers: { Authorization: "KakaoAK ba55818c71fb7419139bf66827f8d540" }
 })
   .done(function (msg) {
@@ -267,10 +267,10 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $(".type-box2 >.t_box:nth-of-type(5)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
-      $(".type-box2 >.t_box:nth-of-type(5)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
-      $(".type-box2 >.t_box:nth-of-type(5)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
-      $(".type-box2 >.t_box:nth-of-type(5)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+      $(".type-box2 >.t_box:nth-of-type(5)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[0].thumbnail + "'/>" + "</a>");
+      $(".type-box2 >.t_box:nth-of-type(5)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[0].title + "</a>" + "</h3>");
+      $(".type-box2 >.t_box:nth-of-type(5)").eq(i).append("<h6>" + msg.documents[0].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+      $(".type-box2 >.t_box:nth-of-type(5)").eq(i).append("<h3>" + msg.documents[0].sale_price + "원" + "</h3>");
 
     }
 
@@ -351,10 +351,10 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $(".type-box3 >.t_box:nth-of-type(1)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
-      $(".type-box3 >.t_box:nth-of-type(1)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
-      $(".type-box3 >.t_box:nth-of-type(1)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
-      $(".type-box3 >.t_box:nth-of-type(1)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+      $(".type-box3 >.t_box:nth-of-type(1)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[0].thumbnail + "'/>" + "</a>");
+      $(".type-box3 >.t_box:nth-of-type(1)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[0].title + "</a>" + "</h3>");
+      $(".type-box3 >.t_box:nth-of-type(1)").eq(i).append("<h6>" + msg.documents[0].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+      $(".type-box3 >.t_box:nth-of-type(1)").eq(i).append("<h3>" + msg.documents[0].sale_price + "원" + "</h3>");
 
     }
 
@@ -372,10 +372,10 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $(".type-box3 >.t_box:nth-of-type(2)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
-      $(".type-box3 >.t_box:nth-of-type(2)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
-      $(".type-box3 >.t_box:nth-of-type(2)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
-      $(".type-box3 >.t_box:nth-of-type(2)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+      $(".type-box3 >.t_box:nth-of-type(2)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[0].thumbnail + "'/>" + "</a>");
+      $(".type-box3 >.t_box:nth-of-type(2)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[0].title + "</a>" + "</h3>");
+      $(".type-box3 >.t_box:nth-of-type(2)").eq(i).append("<h6>" + msg.documents[0].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+      $(".type-box3 >.t_box:nth-of-type(2)").eq(i).append("<h3>" + msg.documents[0].sale_price + "원" + "</h3>");
 
     }
 
