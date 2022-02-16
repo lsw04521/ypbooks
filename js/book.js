@@ -30,9 +30,9 @@ $.ajax({
 
         for (var i = 0; i < boxs.length; i++) {
 
-            $(".book >.bb_i_box:nth-of-type(2)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
-            $(".book >.bb_i_box:nth-of-type(2)").eq(i).append("<h5>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
-            $(".book >.bb_i_box:nth-of-type(2)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+            $(".book >.bb_i_box:nth-of-type(2)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[0].thumbnail + "'/>" + "</a>");
+            $(".book >.bb_i_box:nth-of-type(2)").eq(i).append("<h5>" + '<a href="#">' + msg.documents[0].title + "</a>" + "</h3>");
+            $(".book >.bb_i_box:nth-of-type(2)").eq(i).append("<h6>" + msg.documents[0].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
 
         }
 
