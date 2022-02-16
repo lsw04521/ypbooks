@@ -330,10 +330,10 @@ $.ajax({
 
     for (var i = 0; i < boxs.length; i++) {
 
-      $(".type-box2 >.t_box:nth-of-type(8)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[1].thumbnail + "'/>" + "</a>");
-      $(".type-box2 >.t_box:nth-of-type(8)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[1].title + "</a>" + "</h3>");
-      $(".type-box2 >.t_box:nth-of-type(8)").eq(i).append("<h6>" + msg.documents[1].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
-      $(".type-box2 >.t_box:nth-of-type(8)").eq(i).append("<h3>" + msg.documents[1].sale_price + "원" + "</h3>");
+      $(".type-box2 >.t_box:nth-of-type(8)").eq(i).append('<a href="#">' + "<img src='" + msg.documents[0].thumbnail + "'/>" + "</a>");
+      $(".type-box2 >.t_box:nth-of-type(8)").eq(i).append("<h3>" + '<a href="#">' + msg.documents[0].title + "</a>" + "</h3>");
+      $(".type-box2 >.t_box:nth-of-type(8)").eq(i).append("<h6>" + msg.documents[0].authors + "ㅣ" + msg.documents[i].publisher + "</h6>");
+      $(".type-box2 >.t_box:nth-of-type(8)").eq(i).append("<h3>" + msg.documents[0].sale_price + "원" + "</h3>");
 
     }
 
